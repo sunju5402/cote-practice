@@ -33,30 +33,3 @@ public class Test3 {
         }
     }
 }
-
-// 강사님 답안.
-class Solution3 {
-    public int solution (int N) {
-        int a = 1, b = 2;
-
-        if (N == 1) {
-            return a;
-        }
-
-        for (int i = 3; i <= N; i++) {
-            int temp = a + b;
-            a = b;
-            b = temp;
-        }
-
-        return b;
-    }
-
-    public int solution2 (int N) {
-        if (N <= 2) {
-            return N;
-        }
-
-        return solution2(N - 1) + solution2(N - 2);
-    }
-}
