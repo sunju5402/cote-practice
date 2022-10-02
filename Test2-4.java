@@ -5,8 +5,8 @@ public class Test4 {
     public static void main(String[] args) {
         int delay = 3;
         int capacity = 5;
-//        int[] times = {3, 2, 0, 0, 2, 3, 0, 0, 2, 2, 5};
-        int[] times = {2, 2, 0, 4, 2, 3, 0, 0, 1, 2, 5, 0, 3, 4, 0};
+        int[] times = {3, 2, 0, 0, 2, 3, 0, 0, 2, 2, 5};
+//         int[] times = {2, 2, 0, 4, 2, 3, 0, 0, 1, 2, 5, 0, 3, 4, 0};
         System.out.println(solution(delay, capacity, times));
     }
 
