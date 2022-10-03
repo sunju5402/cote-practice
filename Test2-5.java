@@ -1,3 +1,6 @@
+/*
+ 이미지 픽셀 평균 계산
+*/
 public class Test5 {
     public static void main(String[] args) {
         int[][] arr = {{4, 5, 2, 6, 7,},
