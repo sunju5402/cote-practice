@@ -12,28 +12,19 @@ public class Test4 {
 
     public static int solution(int delay, int capacity, int[] times) {
         int answer = 0;
-        Queue<Integer> queue = new LinkedList<>();
-
+        int currentQueue = 0;
         int total = 0;
         int delNum = 0; // 지워야할 queue size
         for (int i = 0; i < times.length; i++) {
             total += times[i];
-            if (total >= delay) {
-                delNum = total / delay;
-                total %= delay;
-                for (int j = 1; j <= delNum; j++) {
-                    if (!queue.isEmpty()) {
-                        queue.remove();
-                    } else {
-                        break;
-                    }
-                }
-            }
-            if (queue.size() == capacity) {
+            delNum = total / delay;
+            currentQueue = Math.max(0, currentQueue - delNum);
+            if (currentQueue == capacity) {
                 answer++;
             } else {
-                queue.add(times[i]);
+                currentQueue++;
             }
+            total %= delay;
         }
         return answer;
     }
