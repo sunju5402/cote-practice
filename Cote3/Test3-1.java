@@ -7,7 +7,6 @@ public class Test1 {
     }
 
     public static int solution(int N, int[][] trust) {
-        int answer = -1;
         int[] arr = new int[N + 1];
 
         for (int i = 0; i < trust.length; i++) {
@@ -20,6 +19,6 @@ public class Test1 {
                 return i;
             }
         }
-        return answer;
+        return -1;
     }
 }
