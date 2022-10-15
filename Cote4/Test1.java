@@ -16,6 +16,7 @@ public class Test1 {
         }
     }
 
+    //효율성 하나 통과못함.
     public static String[][] solution(String[] titles, String[] lyrics, String[] problems) {
         String[][] answer = new String[problems.length][];
 
@@ -42,6 +43,7 @@ public class Test1 {
         return answer;
     }
 
+    // 효율성측면 떨어짐.
     public static String[][] solution2(String[] titles, String[] lyrics, String[] problems) {
         String[][] answer = new String[problems.length][];
 
