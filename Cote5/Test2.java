@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-
+// 정렬 
 public class Test2 {
     public static void main(String[] args) {
         int[] arr = {3, 30, 34, 5, 9};
