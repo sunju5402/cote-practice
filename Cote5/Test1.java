@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+// 정렬 문제 (에너그램)
 public class Test1 {
     public static void main(String[] args) {
         String s = "imfinethankyou";
