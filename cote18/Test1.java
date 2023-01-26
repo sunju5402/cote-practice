@@ -25,8 +25,4 @@ public class Test1 {
 
 		return cnt;
 	}
-
-	public static int solution1(int[] food) {
-		return (Arrays.stream(food).sum() + 1) / 2;
-	}
 }
